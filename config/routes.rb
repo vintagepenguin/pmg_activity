@@ -13,6 +13,11 @@ PmgActivity::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :questions, :except => [ :destroy ] 
+  
+  resources :quizzes
+
+  resources :user
 
   # Example resource route with options:
   #   resources :products do
